@@ -108,10 +108,23 @@ public class Parser{
   }
 
   private boolean testOperator{
+      int start = position;
+      boolean result ;
+
+      try {
+        operator();
+        result = true;
+
+      }catch(SyntaxException se){
+        result = false;
+      }
 
 
-    
   }
+
+  
+
+
 
 
 
